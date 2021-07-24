@@ -1,0 +1,344 @@
+
+
+.logo{
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+
+ul.nav.justify-content-center{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    border-top:1px solid #9E9E9E;
+    border-bottom: 1px solid #9E9E9E;
+    padding: 5px 0px 5px 0px;
+}
+
+a.nav-link{
+    font-family: Libre Franklin;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color:#9E9E9E;
+}
+ul.nav a:hover { color: #79362E !important; }
+
+a.nav-link.active{
+    color:#79362E !important;}
+
+/*title theme */
+p.title-text{
+font-family: Libre Franklin;
+font-style: normal;
+font-weight: 600;
+font-size: 36px;
+line-height: 44px;
+display: flex;
+align-items: center;
+
+color: black;
+}
+@media(max-width:767px){
+  p.title-text{
+    font-family: Libre Franklin;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    
+    color: black;
+  }
+
+}
+
+div.title-line{
+    margin-top: 50px;
+    width:50px;
+    height:5px;
+    display: block;
+    background-color: #BF1A2C;
+}
+@media(max-width:767px){
+  div.title-line{
+    margin: 50px 0px 05px 0px;
+    width:35px;
+    height:5px;
+    display: block;
+    background-color: #BF1A2C;
+}
+}
+
+
+
+
+/*Tagline and lead text*/
+
+
+
+h1.display-3{
+    color:#79362E;
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 70px;
+}
+
+@media(max-width:767px){
+      h1.display-3{
+        padding-top:20px;
+        color:#79362E;
+        font-family: Merriweather;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 34px;
+        line-height: 40px;
+      }
+}
+
+p.lead{
+    padding-top: 30px;
+    font-family: Libre Franklin;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 40px;
+/* or 200% */
+
+letter-spacing: 0.02em;
+
+color: #000000;
+}
+
+@media(max-width:767px){
+      p.lead{
+        padding-top: 20px;
+        font-family: Libre Franklin;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 20px;
+      /* or 200% */
+
+      letter-spacing: 0.02em;
+
+      color: #000000;
+    }
+}
+
+/*Text animation */
+p.constantText{
+    font-family: Libre Franklin;
+font-style: normal;
+font-weight: 600;
+font-size: 48px;
+line-height: 58px;
+display: flex;
+align-items: center;
+letter-spacing: 0.016em;
+
+color: #000000;
+
+}
+#spin {
+    font-family: Libre Franklin;
+font-style: normal;
+font-weight: 600;
+font-size: 48px;
+line-height: 58px;
+display: flex;
+align-items: center;
+letter-spacing: 0.016em;
+
+color: #BF1A2C;
+
+
+  }
+  #spin:after {
+    content:"";
+    animation: spin 5s linear infinite;
+  }
+  @keyframes spin {
+   
+    0% { content:"listen.";}
+    50% { content:"care.";}
+    100% { content:"heal.";}
+  }
+
+  /*service card*/
+  div.service-svg{
+      align-self: center;
+  }
+  div.service-title{
+    font-family: Libre Franklin;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    padding-left: 5px;
+    color: #000000;
+  }
+  .container.service-container{
+    padding: 40px;
+    background-size: cover;
+     background-color:#ffff;
+    /* background-image:url("../Images/service_bg.png");; */
+  }
+  .row.service-row.d-flex{
+    margin:auto;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .service-card-holder{
+    display: flex;
+    justify-content: center;
+    padding: 40px 30px 40px 30px;
+    /* background-color: #f7f7f7; */
+    background-color: #F9F3EB;
+  }
+  .text-center.mb-3{
+    transform: translate(0,50px);
+  }
+  .card.service-card{
+    background: white;
+    /* border: 2px solid #456D60; */
+    box-sizing: border-box;
+    /* width: 50%;
+  height: 50%;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0; */
+    /* border-radius: 15px; */
+    /* width: 195px;
+    height: 227px; */
+  }
+
+ div.card-title{
+     display:flex;
+ }
+
+  p.card-text{
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: capitalize;
+    padding-top:"20px";
+    color: #000000;
+  }
+
+  .btn.service-btn.btn-success{
+    font-size: 20px;
+    font-family: Libre Franklin;
+    font-style: normal;
+    color: white;
+    padding:10px 20px;
+    background-color: #456D60;
+    border: none;
+  }
+  
+  /*testimonial carousels*/
+  
+  /* @media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* display 3 */
+/* @media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.333%);
+    }
+    
+    .carousel-inner .carousel-item-left.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.333%);
+    }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
+}
+
+.card.card-body{
+  margin-left: 20px;
+  width: 200px;
+  height: 300px;
+} */
+#demo {
+  background: linear-gradient(112deg, #ffffff 50%, antiquewhite 50%);
+  max-width: 900px;
+  margin: auto
+}
+
+.carousel-caption {
+  position: initial;
+  z-index: 10;
+  padding: 5rem 8rem;
+  color: rgba(78, 77, 77, 0.856);
+  text-align: center;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 2rem
+}
+
+@media(max-width:767px) {
+  .carousel-caption {
+      position: initial;
+      z-index: 10;
+      padding: 3rem 2rem;
+      color: rgba(78, 77, 77, 0.856);
+      text-align: center;
+      font-size: 0.7rem;
+      font-style: italic;
+      font-weight: bold;
+      line-height: 1.5rem
+  }
+}
+
+i {
+  background-color: rgb(223, 56, 89);
+  padding: 1.4rem
+}
+
+@media(max-width:767px) {
+  i {
+      padding: 0.8rem
+  }
+}
+
+.carousel-control-prev {
+  justify-content: flex-start
+}
+
+.carousel-control-next {
+  justify-content: flex-end
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  transition: none;
+  opacity: unset
+}
+
+
+
